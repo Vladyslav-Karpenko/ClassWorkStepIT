@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "head head head head head head"
+    "head main main main main main"
+    "head main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+} */
+/* 
+.header {
+  background-color: red;
+  border: 1px solid black;
+  grid-area: head;
+}
+.main {
+  background-color: blue;
+  grid-area: main;
+}
+.footer {
+  background-color: violet;
+  grid-area: footer;
+} */
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  grid-template-areas:
+    "header header header header header header"
+    "aside  aside  aside    main   main   main"
+    "aside  aside  aside   main   main   main"
+    "aside  aside  aside  main   main   main"
+    "aside  aside  aside  main   main   main"
+    "footer footer footer footer footer footer";
+
+  border: 3px solid black;
+}
+
+/* ОБЯЗАТЕЛЬНО указать grid-area */
+.header {
+  grid-area: header;
+  background: #ffdddd;
+}
+.aside {
+  grid-area: aside;
+  background: #ddffdd;
+}
+.main {
+  grid-area: main;
+  background: #ddddff;
+}
+.footer {
+  grid-area: footer;
+  background: #ffffcc;
+}

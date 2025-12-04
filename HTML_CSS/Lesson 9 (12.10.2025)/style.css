@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p {
+  color: rgba(23, 36, 36, 0.759);
+}
+.container {
+  width: 800px;
+  height: 600px;
+  margin: 100px auto 0 auto;
+  border: 1px solid black;
+  /* background-color: rgba(134, 232, 214, 0.149); */
+  /* background-image: url(/images/moto.jpeg); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-position: center; */
+  /* background-blend-mode: overlay; */
+  /* background-attachment: fixed; */
+  /* overflow: scroll; */
+  background: url(/images/moto.jpeg) rgba(134, 232, 214, 0.149) no-repeat fixed;
+}
+
+.title:hover::before {
+  content: "Evgenii!! ";
+}
+.title:hover::after {
+  content: " Vladyslav";
+}
+body {
+  display: flex;
+  gap: 75px;
+  flex-wrap: wrap;
+}
+.box-grad {
+  width: 450px;
+  height: 450px;
+  margin: 100px auto 0 auto;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  /* background-image: linear-gradient(
+    13deg,
+    rgb(0, 110, 255) 20%,
+    yellow 40%,
+    yellow 50%,
+    blue 50%,
+    rgb(128, 0, 102)
+  ); */
+  /* background-image: radial-gradient(circle at center, yellow, blue, green); */
+  /* background-image: radial-gradient(
+    circle at bottom,
+    yellow 15%,
+    yellow 25%,
+    blue 25%,
+    blue 50%,
+    purple 70%
+  ); */
+  /* background: repeating-linear-gradient(
+    45deg,
+    yellow,
+    blue 10px,
+    orange 10px,
+    purple 20px
+  ); */
+  background: repeating-radial-gradient(
+    circle at center,
+    yellow,
+    blue 10px,
+    orange 10px,
+    purple 20px
+  );
+}

@@ -1,0 +1,64 @@
+// @use "variable";
+
+// @import "variable"
+
+@use "variable" as *;
+
+// .title {
+//   color: variable.$primaryColor;
+//   font-size: variable.$titleFontSize;
+// }
+.title {
+  color: $primaryColor;
+  font-size: $titleFontSize;
+}
+.section {
+  width: 100px;
+  h2 {
+    color: red;
+    span {
+      color: blueviolet;
+    }
+  }
+}
+.menu {
+  display: flex;
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    color: yellow;
+  }
+  &__link--active:active {
+    border-bottom: 1px solid black;
+    color: aqua;
+  }
+}
+
+.btn {
+  width: 100px;
+  height: 75px;
+  background-color: rgb(28, 27, 27);
+  border-radius: 15px;
+  color: wheat;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.btn2 {
+  @extend .btn;
+  background-color: blanchedalmond;
+  color: darkslategray;
+}
+
+.yes {
+  @extend %button;
+}
+.no {
+  @extend %button;
+}
+
+
+
+
+.no {
+  @include borderColor(tomato);
+}

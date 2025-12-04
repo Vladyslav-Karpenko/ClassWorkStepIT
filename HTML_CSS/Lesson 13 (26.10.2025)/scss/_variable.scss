@@ -1,0 +1,65 @@
+$primaryColor: red;
+$titleFontSize: 24px;
+
+// Шаблон
+%button {
+  width: 100px;
+  height: 75px;
+  background-color: rgb(28, 27, 27);
+  border-radius: 15px;
+  color: wheat;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+//  @mixin
+@mixin borderColor($color) {
+  border: 2px dotted $color;
+}
+
+// main.css .dog-icon {
+//   background-image: url("../images/dog.png");
+// }
+
+// .cat-icon {
+//   background-image: url("../images/cat.png");
+// }
+
+// .bird-icon {
+//   background-image: url("../images/bird.png");
+// }
+
+// .turtle-icon {
+//   background-image: url("../images/turtle.png");
+// }
+
+// @each $animal in dog, cat, bird, turtule {
+//   .#{$animal}-icon {
+//     background-image: url("../images/#{$animal}.png");
+//   }
+// }
+
+body {
+  background-color: map-get($colors, "background");
+}
+@function getColor($colorKey) {
+  @return map-get($colors, $colorKey);
+}
+
+.btn3 {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  color: getColor("btn");
+  background-color: getColor("hover");
+}
+
+$color-title: black;
+$color-btn: red;
+$color-hover: violet;
+$color-background: yellow;
+
+$colors: (
+  "title": black,
+  "btn": red,
+  "hover": violet,
+  "background": yellow,
+);
