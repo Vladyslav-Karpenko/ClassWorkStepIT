@@ -1,0 +1,7 @@
+* {
+  transition: 1s;
+}
+.dark {
+  color: white;
+  background-color: black;
+}
