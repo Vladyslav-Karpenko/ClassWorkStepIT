@@ -69,17 +69,43 @@
 //     console.log('key ', event.key);
 //     console.log('code ', event.code);
 // })
-const myText = document.querySelector('#myH')
+// const myText = document.querySelector('#myH')
 // document.addEventListener('mousemove', (event) => {
 //     myText.textContent = `X: ${event.clientX} Y: ${event.clientY}`
 // })
 
-const myList = document.querySelector('#list')
+// const myList = document.querySelector('#list')
 
-myList.addEventListener('click', (event) => {
-    console.log(event.target);
-    if (event.target.tagName === 'LI') {
-        console.log(event.target.textContent);
+// myList.addEventListener('click', (event) => {
+//     console.log(event.target);
+//     if (event.target.tagName === 'LI') {
+//         console.log(event.target.textContent);
 
-    }
-});
+//     }
+// });
+
+// ! Events and forms
+// !
+// const input = document.querySelector('#input')
+// input.addEventListener('change', (event) => console.log(event.target.value))
+
+// // !
+// const form = document.querySelector('#form')
+// const input = document.querySelector('#input')
+// const button = document.querySelector('#btn')
+
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault()
+//     console.log('Send!');
+//     console.log(input.value);
+//     input.value = ''
+// })
+
+// ! input checkbox
+
+// const checkbox = document.querySelector('#inp')
+// checkbox.addEventListener('change', () => {
+//     console.log(checkbox.checked);
+
+// })
+// console.log(checkbox.placeholder)
